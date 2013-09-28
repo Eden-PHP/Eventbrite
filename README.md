@@ -1,0 +1,4 @@
+Eventbrite
+==========
+
+Eden Eventbrite component
