@@ -75,7 +75,6 @@ class User extends Base
         $query = array('passwd' => $pass, 'email' => $user);
 
         return $this->getJsonResponse(self::URL_NEW, $query);
-
     }
 
     /**
@@ -143,6 +142,7 @@ class User extends Base
                 //lets may it an array
                 $hide = explode(',', $hide);
             }
+
             //at this ponit hide will be an array
             $displays = array();
             //for each hide
@@ -153,6 +153,7 @@ class User extends Base
                     $displays[] = trim($display);
                 }
             }
+
             //if we have at least one valid status
             if (!empty($displays)) {
                 //lets make hide into a string
@@ -169,6 +170,7 @@ class User extends Base
                 //lets make it an array
                 $status = explode(',', $status);
             }
+
             //at this point status will be an array
             $statuses = array();
             //for each status
@@ -188,6 +190,7 @@ class User extends Base
                 $query['event_statuses'] = $status;
             }
         }
+
         //if order is equal to desc
         if ($order == 'desc') {
             //add it to our query
@@ -223,6 +226,7 @@ class User extends Base
         if (!is_null($type)) {
             $query['type'] = trim($type);
         }
+
         return $this->getJsonResponse(self::URL_LIST_TICKETS, $query);
     }
 

@@ -22,8 +22,8 @@ use Eden\Eventbrite\Exception as Exception;
  */
 class Set extends EventbriteBase
 {
-    const URL_NEW       = 'https://www.eventbrite.com/json/event_new';
-    const URL_UPDATE    = 'https://www.eventbrite.com/json/event_update';
+    const URL_NEW = 'https://www.eventbrite.com/json/event_new';
+    const URL_UPDATE = 'https://www.eventbrite.com/json/event_update';
     const DRAFT = 'draft';
     const LIVE  = 'live';
 
@@ -423,7 +423,7 @@ class Set extends EventbriteBase
     }
 
     /**
-     * Set the timezone in GMT format ie. GMT+01
+     * Set the timezone ie. Asia/Manila
      *
      * @param string
      * @return Eden\Eventbrite\Event\Set

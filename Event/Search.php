@@ -433,7 +433,7 @@ class Search extends EventbriteBase
     }
 
     /**
-     * Sets a tranking link
+     * Sets a tracking link
      *
      * @param string
      * @return Eden\Eventbrite\Event\Search
