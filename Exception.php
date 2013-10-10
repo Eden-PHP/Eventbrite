@@ -45,8 +45,8 @@ class Exception extends CoreException
     /**
      * check if valid
      *
-     * @param  string  $type
-     * @param  scalar  $data
+     * @param string $type
+     * @param scalar $data
      * @return boolean
      */
     protected function isValid($type, $data)

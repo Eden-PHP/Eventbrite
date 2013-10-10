@@ -27,7 +27,7 @@ class Event extends Base
     /**
      * Sets token or user and api
      *
-     * @param string  $user
+     * @param string $user
      * @param string $api
      * @return  void
      */
@@ -143,7 +143,7 @@ class Event extends Base
     /**
      * Returns the search class
      *
-     * @return Event_Search
+     * @return Eden\Eventbrite\Event\Search
      */
     public function search()
     {
@@ -153,7 +153,7 @@ class Event extends Base
     /**
      * Returns the set class
      *
-     * @return Event_Set
+     * @return Eden\Eventbrite\Event\Set
      */
     public function set()
     {

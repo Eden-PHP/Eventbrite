@@ -32,7 +32,7 @@ class Set extends EventbriteBase
     /**
      * Sets token or user and api
      *
-     * @param string  $user
+     * @param string $user
      * @param string $api
      * @return  void
      */

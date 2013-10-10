@@ -64,7 +64,7 @@ class Discount extends Base
      * Sets the discount amount
      *
      * @param float|int
-     * @return  Eden\Evenbrite\Discount
+     * @return Eden\Evenbrite\Discount
      */
     public function setAmountOff($amount)
     {

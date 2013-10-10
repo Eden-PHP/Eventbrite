@@ -24,7 +24,7 @@ class Payment extends Base
     /**
      * Sets token or user and api
      *
-     * @param string  $user
+     * @param string $user
      * @param string $api
      * @return  void
      */
