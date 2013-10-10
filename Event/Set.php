@@ -11,6 +11,7 @@ namespace Eden\Eventbrite\Event;
 
 use Eden\Eventbrite\Base as EventbriteBase;
 use Eden\Eventbrite\Argument as Argument;
+use Eden\Eventbrite\Exception as Exception;
 
 /**
  * Eventbrite new or update event
@@ -107,45 +108,8 @@ class Set extends EventbriteBase
      */
     public function update()
     {
-        if (!isset($this->query['title'])) {
-            Exception::i()->setMessage(Exception::TITLE_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['start_date'])) {
-            Exception::i()->setMessage(Exception::START_NOT_SET)->trigger();
-        }
-
-
-        if (!isset($this->query['end_date'])) {
-            Exception::i()->setMessage(Exception::END_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['timezone'])) {
-            Exception::i()->setMessage(Exception::ZONE_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['privacy'])) {
-            Exception::i()->setMessage(Exception::PRIVACY_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['personalized_url'])) {
-            Exception::i()->setMessage(Exception::URL_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['organizer_id'])) {
-            Exception::i()->setMessage(Exception::ORGANIZER_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['venue_id'])) {
-            Exception::i()->setMessage(Exception::VENUE_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['capacity'])) {
-            Exception::i()->setMessage(Exception::CAPACITY_NOT_SET)->trigger();
-        }
-
-        if (!isset($this->query['currency'])) {
-            Exception::i()->setMessage(Exception::CURRENCY_NOT_SET)->trigger();
+        if (!isset($this->query['event_id'])) {
+            Exception::i()->setMessage(Exception::ID_NOT_SET)->trigger();
         }
 
         return $this->getJsonResponse(self::URL_UPDATE, $this->query);
@@ -286,7 +250,7 @@ class Set extends EventbriteBase
         //Argument 1 must be a string
         Argument::i()->test(1, 'string', 'int');
 
-        if (is_string($end)) {
+        if (!is_numeric($end)) {
             $end = strtotime($end);
         }
 
@@ -433,12 +397,11 @@ class Set extends EventbriteBase
         //Argument 1 must be a string
         Argument::i()->test(1, 'string', 'int');
 
-        if (is_string($start)) {
+        if (!is_numeric($start)) {
             $start = strtotime($start);
         }
 
         $start = date('Y-m-d H:i:s', $start);
-
         $this->query['start_date'] = $start;
 
         return $this;

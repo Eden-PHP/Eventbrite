@@ -52,9 +52,6 @@ class Search extends EventbriteBase
      */
     public function countOnly()
     {
-        //Argument 1 must be a boolean
-        Argument::i()->test(1, 'bool');
-
         $this->query['count_only'] = 'true';
 
         return $this;
@@ -97,8 +94,8 @@ class Search extends EventbriteBase
         //Argument 1 must be a string or array
         Argument::i()->test(1, 'string', 'array');
 
-        if (is_array($tickets)) {
-            $tickets = implode(',', $tickets);
+        if (is_array($category)) {
+            $category = implode(',', $category);
         }
 
         $this->query['category'] = $category;
@@ -361,9 +358,6 @@ class Search extends EventbriteBase
      */
     public function sortByCity()
     {
-        //Argument 1 must be a string
-        Argument::i()->test(1, 'string');
-
         $this->query['sort_by'] = 'city';
 
         return $this;
@@ -376,9 +370,6 @@ class Search extends EventbriteBase
      */
     public function sortByDate()
     {
-        //Argument 1 must be a string
-        Argument::i()->test(1, 'string');
-
         $this->query['sort_by'] = 'date';
 
         return $this;
@@ -391,9 +382,6 @@ class Search extends EventbriteBase
      */
     public function sortById()
     {
-        //Argument 1 must be a string
-        Argument::i()->test(1, 'string');
-
         $this->query['sort_by'] = 'id';
 
         return $this;
@@ -406,9 +394,6 @@ class Search extends EventbriteBase
      */
     public function sortByName()
     {
-        //Argument 1 must be a string
-        Argument::i()->test(1, 'string');
-
         $this->query['sort_by'] = 'name';
 
         return $this;

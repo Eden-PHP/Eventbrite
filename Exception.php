@@ -23,6 +23,7 @@ class Exception extends CoreException
     const TITLE_NOT_SET = 'You tried to set an event without setting a title. Call setTitle() before send()';
     const START_NOT_SET = 'You tried to set an event without setting a start date. Call setStart() before send()';
     const END_NOT_SET = 'You tried to set an event without setting an end date. Call setEnd() before send()';
+    const ID_NOT_SET = 'You tried to set an event without setting an event ID. Call setEnd() before send()';
     const ZONE_NOT_SET = 'You tried to set an event without setting a timezone. Call setTimezone() before send()';
 
     const EVENT_NOT_SET = 'You tried to create/update a ticket without setting an event!';

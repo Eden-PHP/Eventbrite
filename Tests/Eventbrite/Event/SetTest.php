@@ -14,12 +14,32 @@ class Set extends \PHPUnit_Framework_TestCase
 
     public function testCreate()
     {
+        // $event = $this->eventSet
+        //     ->isPrivate()
+        //     ->setTitle('event created using api')
+        //     ->setStart(1385852400)
+        //     ->setEnd(1388358000)
+        //     ->setTimezone('US/Pacific')
+        //     ->create();
 
+        // $this->assertArrayHasKey('process', $event);
+        // $this->assertArrayHasKey('status', $event['process']);
+        // $this->assertTrue($event['process']['status'] == 'OK');
     }
 
     public function testUpdate()
     {
+        // $id = 8750363573;
+        // $event = $this->eventSet
+        //     ->setId($id)
+        //     ->isPublic()
+        //     ->setTitle('UPDATED TITLE')
+        //     ->setTimezone('Asia/Manila')
+        //     ->update();
 
+        // $this->assertArrayHasKey('process', $event);
+        // $this->assertArrayHasKey('status', $event['process']);
+        // $this->assertTrue($event['process']['status'] == 'OK');
     }
 
     public function testIsPrivate()
@@ -315,7 +335,7 @@ class Set extends \PHPUnit_Framework_TestCase
 
     public function testSetTimezone()
     {
-        $timezone = '+0000';
+        $timezone = 'US/Pacific';
         $event = $this->eventSet
             ->setTimezone($timezone);
 
