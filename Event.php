@@ -75,8 +75,13 @@ class Event extends Base
      * @param bool
      * @return array
      */
-    public function getAttendees($id, $count = 50, $page = 1, $display = null, $barcodes = false)
-    {
+    public function getAttendees(
+        $id,
+        $count = 50,
+        $page = 1,
+        $display = null,
+        $barcodes = false
+    ) {
         //argument test
         $error = Argument::i()
             //Argument 1 must be numeric
