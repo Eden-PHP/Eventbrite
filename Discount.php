@@ -81,7 +81,7 @@ class Discount extends Base
      * Sets the discount code
      *
      * @param string
-     * @return  Eden\Evenbrite\Discount
+     * @return Eden\Evenbrite\Discount
      */
     public function setCode($code)
     {
@@ -97,7 +97,7 @@ class Discount extends Base
      * Set the end time
      *
      * @param string|int
-     * @return  Eden\Evenbrite\Discount
+     * @return Eden\Evenbrite\Discount
      */
     public function setEnd($end)
     {
@@ -119,7 +119,7 @@ class Discount extends Base
      * Sets the discount percent
      *
      * @param float|int
-     * @return  Eden\Evenbrite\Discount
+     * @return Eden\Evenbrite\Discount
      */
     public function setPercentOff($percent)
     {
@@ -135,7 +135,7 @@ class Discount extends Base
      * Set quantity
      *
      * @param int
-     * @return  Eden\Evenbrite\Discount
+     * @return Eden\Evenbrite\Discount
      */
     public function setQuantity($quantity)
     {
@@ -151,7 +151,7 @@ class Discount extends Base
      * Set the start time
      *
      * @param int|string
-     * @return  Eden\Evenbrite\Discount
+     * @return Eden\Evenbrite\Discount
      */
     public function setStart($start)
     {

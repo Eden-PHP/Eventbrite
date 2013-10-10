@@ -47,8 +47,8 @@ class Base extends CoreBase
     /**
      * return the response in array
      *
-     * @param  string $url
-     * @param  array  $query
+     * @param string $url
+     * @param array $query
      * @return array
      */
     protected function getJsonResponse($url, array $query = array())
@@ -61,8 +61,8 @@ class Base extends CoreBase
     /**
      * return response
      *
-     * @param  string $url
-     * @param  array  $query
+     * @param string $url
+     * @param array $query
      * @return string
      */
     protected function getResponse($url, array $query = array())
@@ -116,8 +116,8 @@ class Base extends CoreBase
     /**
      * return xml response as object
      *
-     * @param  string $url
-     * @param  array  $query
+     * @param string $url
+     * @param array $query
      * @return object
      */
     protected function getXmlResponse($url, array $query = array())

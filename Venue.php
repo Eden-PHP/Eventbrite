@@ -28,7 +28,7 @@ class Venue extends Base
      *
      * @param string $user
      * @param string $api
-     * @return  void
+     * @return void
      */
     public function __construct($user, $api = false)
     {
@@ -47,7 +47,7 @@ class Venue extends Base
      * set id in query
      *
      * @param int
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setId($id)
     {
@@ -63,7 +63,7 @@ class Venue extends Base
      * set organizer id in query
      *
      * @param int
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setOrganizerId($organizerId)
     {
@@ -79,7 +79,7 @@ class Venue extends Base
      * set name in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setName($name)
     {
@@ -95,7 +95,7 @@ class Venue extends Base
      * set name in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setAddress($address)
     {
@@ -111,7 +111,7 @@ class Venue extends Base
      * set address_2 in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setAddress2($address2)
     {
@@ -127,7 +127,7 @@ class Venue extends Base
      * set city in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setCity($city)
     {
@@ -143,7 +143,7 @@ class Venue extends Base
      * set region in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setRegion($region)
     {
@@ -159,7 +159,7 @@ class Venue extends Base
      * set postal code in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setPostalCode($postalCode)
     {
@@ -175,7 +175,7 @@ class Venue extends Base
      * set country_code in query
      *
      * @param string
-     * @return  Eden\Eventbrite\Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function setCountryCode($countryCode)
     {

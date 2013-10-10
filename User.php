@@ -36,7 +36,7 @@ class User extends Base
      *
      * @param string $user
      * @param string $api
-     * @return  void
+     * @return void
      */
     public function __construct($user, $api = false)
     {
@@ -66,6 +66,7 @@ class User extends Base
             ->test(1, 'string')
             //Argument 2 must be a string
             ->test(2, 'string');
+
         //if the string lenght of pass is less than 4
         if (strlen($pass) < 4) {
             //show an error
@@ -213,7 +214,7 @@ class User extends Base
     /**
      * Returns a user's ticket history
      *
-     * @param  string|null
+     * @param string|null
      * @return array
      */
     public function getTickets($type = null)
@@ -252,6 +253,7 @@ class User extends Base
         Argument::i()
             //Argument 1 must be a string
             ->test(1, 'string');
+
         if (!is_null($email)) {
             //add it to our query
             $this->query['new_email'] = $email;

@@ -30,7 +30,7 @@ class Event extends Base
      *
      * @param string $user
      * @param string $api
-     * @return  void
+     * @return void
      */
     public function __construct($user, $api = false)
     {

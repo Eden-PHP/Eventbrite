@@ -28,7 +28,7 @@ class Ticket extends Base
      *
      * @param string $user
      * @param string $api
-     * @return  void
+     * @return void
      */
     public function __construct($user, $api = false)
     {
@@ -93,7 +93,7 @@ class Ticket extends Base
     /**
      * Accept donations
      *
-     * @param  bool
+     * @param bool
      * @return Eden\Eventbrite\Ticket
      */
     public function setDonation($type = true)
