@@ -262,12 +262,12 @@ class Ticket extends Base
     /**
      * Set price
      *
-     * @param float
+     * @param float|int
      * @return Eden\Eventbrite\Ticket
      */
     public function setPrice($price)
     {
-        //Argument 1 must be float
+        //Argument 1 must be float or int
         Argument::i()->test(1, 'float', 'int');
 
         $this->query['price'] = $price;
