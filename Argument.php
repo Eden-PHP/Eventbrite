@@ -25,5 +25,4 @@ use Eden\Core\Argument as CoreArgument;
  */
 class Argument extends CoreArgument
 {
-
 }

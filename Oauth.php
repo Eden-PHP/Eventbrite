@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -21,7 +21,6 @@ use Eden\Oauth\Oauth2\Client;
 class Oauth extends Client
 {
     const INSTANCE = 0; // set to multiton
-
     const REQUEST_URL   = 'https://www.eventbrite.com/oauth/authorize';
     const ACCESS_URL    = 'https://www.eventbrite.com/oauth/token';
 
@@ -36,6 +35,12 @@ class Oauth extends Client
             //Argument 3 must be a string
             ->test(3, 'string');
 
-        parent::__construct($clientId, $appSecret, $redirect, self::REQUEST_URL, self::ACCESS_URL);
+        parent::__construct(
+            $clientId,
+            $appSecret,
+            $redirect,
+            self::REQUEST_URL,
+            self::ACCESS_URL
+        );
     }
 }

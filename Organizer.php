@@ -24,9 +24,9 @@ class Organizer extends Base
 
     /**
      * Sets token or user and api
+     *
      * @param string  $user
      * @param string $api
-     *
      * @return  void
      */
     public function __construct($user, $api = false)

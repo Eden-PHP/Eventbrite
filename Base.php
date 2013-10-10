@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -29,6 +29,7 @@ class Base extends CoreBase
     /**
      * Returns the meta of the last call
      *
+     * @param string|null meta name
      * @return array
      */
     public function getMeta($key = null)
@@ -52,6 +53,7 @@ class Base extends CoreBase
     protected function getJsonResponse($url, array $query = array())
     {
         $response = $this->getResponse($url, $query);
+
         return json_decode($response, true);
     }
 
@@ -84,8 +86,8 @@ class Base extends CoreBase
         //if there is no question mark
         if (strpos($url, '?') === false) {
             $connector = '?';
-            //if the redirect doesn't end with a question mark
         } else if (substr($url, -1) != '?') {
+            //if the redirect doesn't end with a question mark
             $connector = '&';
         }
 
@@ -120,6 +122,7 @@ class Base extends CoreBase
     protected function getXmlResponse($url, array $query = array())
     {
         $response = $this->getResponse($url, $query);
+
         return simplexml_load_string($response);
     }
 }

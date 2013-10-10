@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -29,7 +29,7 @@ class Factory extends Base
      *
      * @param string client ID
      * @param string app secret
-     * @return Discount
+     * @return Eden\Eventbrite\Oauth
      */
     public function auth($clientId, $appSecret, $redirect)
     {
@@ -46,7 +46,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Discount
+     * @return Eden\Eventbrite\Discount
      */
     public function discount($user, $api = null)
     {
@@ -65,7 +65,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Event
+     * @return Eden\Eventbrite\Event
      */
     public function event($user, $api = null)
     {
@@ -84,7 +84,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Organizer
+     * @return Eden\Eventbrite\Organizer
      */
     public function organizer($user, $api = null)
     {
@@ -103,7 +103,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Payment
+     * @return Eden\Eventbrite\Payment
      */
     public function payment($user, $api = null)
     {
@@ -122,7 +122,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Venue
+     * @return Eden\Eventbrite\Event\Search
      */
     public function search($user, $api = null)
     {
@@ -141,7 +141,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Venue
+     * @return Eden\Eventbrite\Event\Set
      */
     public function set($user, $api = null)
     {
@@ -160,7 +160,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Ticket
+     * @return Eden\Eventbrite\Ticket
      */
     public function ticket($user, $api = null)
     {
@@ -179,7 +179,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return User
+     * @return Eden\Eventbrite\User
      */
     public function user($user, $api = null)
     {
@@ -198,7 +198,7 @@ class Factory extends Base
      *
      * @param string
      * @param string|null
-     * @return Venue
+     * @return Eden\Eventbrite\Venue
      */
     public function venue($user, $api = null)
     {

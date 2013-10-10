@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -25,9 +25,9 @@ class Venue extends Base
 
     /**
      * Sets token or user and api
+     *
      * @param string  $user
      * @param string $api
-     *
      * @return  void
      */
     public function __construct($user, $api = false)
@@ -47,7 +47,6 @@ class Venue extends Base
      * set id in query
      *
      * @param int
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setId($id)
@@ -64,7 +63,6 @@ class Venue extends Base
      * set organizer id in query
      *
      * @param int
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setOrganizerId($organizerId)
@@ -81,7 +79,6 @@ class Venue extends Base
      * set name in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setName($name)
@@ -98,7 +95,6 @@ class Venue extends Base
      * set name in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setAddress($address)
@@ -115,7 +111,6 @@ class Venue extends Base
      * set address_2 in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setAddress2($address2)
@@ -132,7 +127,6 @@ class Venue extends Base
      * set city in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setCity($city)
@@ -149,7 +143,6 @@ class Venue extends Base
      * set region in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setRegion($region)
@@ -166,7 +159,6 @@ class Venue extends Base
      * set postal code in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setPostalCode($postalCode)
@@ -183,7 +175,6 @@ class Venue extends Base
      * set country_code in query
      *
      * @param string
-     *
      * @return  Eden\Eventbrite\Venue
      */
     public function setCountryCode($countryCode)
@@ -204,15 +195,21 @@ class Venue extends Base
     public function create()
     {
         if (!isset($this->query['organizer_id'])) {
-            Exception::i()->setMessage(Exception::ORGANIZER_ORGANIZER_ID_NOT_SET)->trigger();
+            Exception::i()
+                ->setMessage(Exception::ORGANIZER_ORGANIZER_ID_NOT_SET)
+                ->trigger();
         }
 
         if (!isset($this->query['name'])) {
-            Exception::i()->setMessage(Exception::ORGANIZER_NAME_NOT_SET)->trigger();
+            Exception::i()
+                ->setMessage(Exception::ORGANIZER_NAME_NOT_SET)
+                ->trigger();
         }
 
         if (!isset($this->query['country_code'])) {
-            Exception::i()->setMessage(Exception::ORGANIZER_COUNTRY_CODE_NOT_SET)->trigger();
+            Exception::i()
+                ->setMessage(Exception::ORGANIZER_COUNTRY_CODE_NOT_SET)
+                ->trigger();
         }
 
         return $this->getJsonResponse(self::URL_NEW, $this->query);
@@ -227,7 +224,9 @@ class Venue extends Base
     public function update()
     {
         if (!isset($this->query['id'])) {
-            Exception::i()->setMessage(Exception::ORGANIZER_ID_NOT_SET)->trigger();
+            Exception::i()
+                ->setMessage(Exception::ORGANIZER_ID_NOT_SET)
+                ->trigger();
         }
 
         return $this->getJsonResponse(self::URL_UPDATE, $this->query);

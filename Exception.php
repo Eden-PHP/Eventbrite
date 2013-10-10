@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -25,13 +25,11 @@ class Exception extends CoreException
     const END_NOT_SET = 'You tried to set an event without setting an end date. Call setEnd() before send()';
     const ID_NOT_SET = 'You tried to set an event without setting an event ID. Call setEnd() before send()';
     const ZONE_NOT_SET = 'You tried to set an event without setting a timezone. Call setTimezone() before send()';
-
     const EVENT_NOT_SET = 'You tried to create/update a ticket without setting an event!';
     const NAME_NOT_SET = 'You tried to create/update a ticket without setting it\'s name!';
     const PRICE_NOT_SET = 'You tried to create/update a ticket without setting it\'s price!';
     const QUANTITY_NOT_SET = 'You tried to create/update a ticket without setting it\'s quantity!';
     const TICKET_ID_NOT_SET = 'You tried to update a ticket without setting it\'s id!';
-
     const PRIVACY_NOT_SET = 'You tried to set an event without setting the privacy. Call setPublic() or setPrivate() before send()';
     const URL_NOT_SET = 'You tried to set an event without setting a personal url. Call setUrl() before send()';
     const ORGANIZER_NOT_SET = 'You tried to set an event without setting an orgaizer. Call setOrganizer() before send()';
@@ -39,7 +37,6 @@ class Exception extends CoreException
     const CAPACITY_NOT_SET = 'You tried to set an event without setting the capacity. Call setCapacity() before send()';
     const CURRENCY_NOT_SET = 'You tried to set an event without setting a currency. Call setCurrency() before send()';
     const INVALID_PASSWORD = 'Password must be 4 characters or greater!';
-
     const ORGANIZER_ORGANIZER_ID_NOT_SET = 'You tried to create a venue without organizer id!';
     const ORGANIZER_ID_NOT_SET = 'You tried to create a venue without venue id!';
     const ORGANIZER_NAME_NOT_SET = 'You tried to create a venue without name!';
@@ -47,8 +44,9 @@ class Exception extends CoreException
 
     /**
      * check if valid
+     *
      * @param  string  $type
-     * @param  mixed  $data
+     * @param  scalar  $data
      * @return boolean
      */
     protected function isValid($type, $data)

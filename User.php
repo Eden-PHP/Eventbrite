@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -27,16 +27,15 @@ class User extends Base
     const URL_UPDATE = 'https://www.eventbrite.com/json/user_update';
 
     protected $query = array();
-
-    protected static $validDisplays = array('description', 'venue', 'logo', 'style', 'organizer', 'tickets');
-
+    protected static $validDisplays = array('description', 'venue', 'logo',
+        'style', 'organizer', 'tickets');
     protected static $validStatus = array('live', 'started', 'ended');
 
     /**
      * Sets token or user and api
-     * @param string  $user
-     * @param string $api
      *
+     * @param string $user
+     * @param string $api
      * @return  void
      */
     public function __construct($user, $api = false)
@@ -113,8 +112,12 @@ class User extends Base
      * @param string|null
      * @return array
      */
-    public function getEvents($user = null, $hide = null, $status = null, $order = null)
-    {
+    public function getEvents(
+        $user = null,
+        $hide = null,
+        $status = null,
+        $order = null
+    ) {
         //argument test
         Argument::i()
             //Argument 1 must be a string or null
@@ -208,7 +211,6 @@ class User extends Base
      * Returns a user's ticket history
      *
      * @param  string|null
-     *
      * @return array
      */
     public function getTickets($type = null)
@@ -236,8 +238,8 @@ class User extends Base
 
     /**
      * sets new email
-     * @param string
      *
+     * @param string
      * @return Eden\Eventbrite\User
      */
     public function setEmail($email)
@@ -256,8 +258,8 @@ class User extends Base
 
     /**
      * sets new password
-     * @param string
      *
+     * @param string
      * @return Eden\Eventbrite\User
      */
     public function setPassword($password)

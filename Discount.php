@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -19,16 +19,15 @@ namespace Eden\Eventbrite;
 class Discount extends Base
 {
     const INSTANCE = 0;
-
     const URL_NEW = 'https://www.eventbrite.com/json/discount_new';
     const URL_UPDATE = 'https://www.eventbrite.com/json/discount_update';
     protected $query = array();
 
     /**
      * Sets token or user and api
+     *
      * @param string  $user
      * @param string $api
-     *
      * @return  void
      */
     public function __construct($user, $api = false)
@@ -57,6 +56,7 @@ class Discount extends Base
 
         $query = $this->query;
         $query['event_id'] = $event;
+
         return $this->getJsonResponse(self::URL_NEW, $query);
     }
 
@@ -201,6 +201,7 @@ class Discount extends Base
 
         $query = $this->query;
         $query['id'] = $id;
+
         return $this->getJsonResponse(self::URL_UPDATE, $query);
     }
 }

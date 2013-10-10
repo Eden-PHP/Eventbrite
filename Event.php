@@ -1,6 +1,6 @@
 <?php //-->
 /*
- * This file is part of the Core package of the Eden PHP Library.
+ * This file is part of the Eventbrite package of the Eden PHP Library.
  * (c) 2013-2014 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE
@@ -26,9 +26,9 @@ class Event extends Base
 
     /**
      * Sets token or user and api
+     *
      * @param string  $user
      * @param string $api
-     *
      * @return  void
      */
     public function __construct($user, $api = false)
@@ -138,7 +138,7 @@ class Event extends Base
     /**
      * Returns the search class
      *
-     * @return Event_Set
+     * @return Event_Search
      */
     public function search()
     {
