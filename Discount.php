@@ -28,7 +28,7 @@ class Discount extends Base
      * Sets token or user and api
      *
      * @param string $user
-     * @param string $api
+     * @param string|bool|null $api
      * @return void
      */
     public function __construct($user, $api = false)
@@ -38,7 +38,7 @@ class Discount extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         $this->api = $api;
         $this->user = $user;

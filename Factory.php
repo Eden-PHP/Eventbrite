@@ -46,7 +46,7 @@ class Factory extends Base
      * Returns Eventbrite Discount
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Discount
      */
     public function discount($user, $api = null)
@@ -56,7 +56,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Discount::i($user, $api);
     }
@@ -65,7 +65,7 @@ class Factory extends Base
      * Returns Eventbrite Event
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Event
      */
     public function event($user, $api = null)
@@ -75,7 +75,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Event::i($user, $api);
     }
@@ -84,7 +84,7 @@ class Factory extends Base
      * Returns Eventbrite Organizer
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Organizer
      */
     public function organizer($user, $api = null)
@@ -94,7 +94,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Organizer::i($user, $api);
     }
@@ -103,7 +103,7 @@ class Factory extends Base
      * Returns Eventbrite Payment
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Payment
      */
     public function payment($user, $api = null)
@@ -113,7 +113,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Payment::i($user, $api);
     }
@@ -122,7 +122,7 @@ class Factory extends Base
      * Returns Eventbrite Search
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Event\Search
      */
     public function search($user, $api = null)
@@ -132,7 +132,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Event\Search::i($user, $api);
     }
@@ -141,7 +141,7 @@ class Factory extends Base
      * Returns Eventbrite Set
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Event\Set
      */
     public function set($user, $api = null)
@@ -151,7 +151,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Event\Set::i($user, $api);
     }
@@ -160,7 +160,7 @@ class Factory extends Base
      * Returns Eventbrite Ticket
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Ticket
      */
     public function ticket($user, $api = null)
@@ -170,7 +170,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Ticket::i($user, $api);
     }
@@ -179,7 +179,7 @@ class Factory extends Base
      * Returns Eventbrite User
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\User
      */
     public function user($user, $api = null)
@@ -189,7 +189,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return User::i($user, $api);
     }
@@ -198,7 +198,7 @@ class Factory extends Base
      * Returns Eventbrite Venue
      *
      * @param string
-     * @param string|null
+     * @param string|bool|null
      * @return Eden\Eventbrite\Venue
      */
     public function venue($user, $api = null)
@@ -208,7 +208,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'null');
+            ->test(2, 'string', 'bool');
 
         return Venue::i($user, $api);
     }
