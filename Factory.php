@@ -29,6 +29,7 @@ class Factory extends Base
      *
      * @param string client ID
      * @param string app secret
+     * @param  string redirect url
      * @return Eden\Eventbrite\Oauth
      */
     public function auth($clientId, $appSecret, $redirect)
