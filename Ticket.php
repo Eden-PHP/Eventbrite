@@ -251,7 +251,7 @@ class Ticket extends Base
      */
     public function setName($name)
     {
-        //Argument 1 must be int
+        //Argument 1 must be string
         Argument::i()->test(1, 'string');
 
         $this->query['name'] = $name;
@@ -267,7 +267,7 @@ class Ticket extends Base
      */
     public function setPrice($price)
     {
-        //Argument 1 must be float
+        //Argument 1 must be float or int
         Argument::i()->test(1, 'float', 'int');
 
         $this->query['price'] = $price;
@@ -299,7 +299,7 @@ class Ticket extends Base
      */
     public function setStart($start)
     {
-        //Argument 1 must be a string
+        //Argument 1 must be a string or int
         Argument::i()->test(1, 'string', 'int');
 
         if (is_string($start)) {
