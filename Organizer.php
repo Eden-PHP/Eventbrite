@@ -19,7 +19,7 @@ namespace Eden\Eventbrite;
 class Organizer extends Base
 {
     const URL_NEW = 'https://www.eventbrite.com/json/organizer_new';
-    const URL_UPDATE  = 'https://www.eventbrite.com/json/organizer_update';
+    const URL_UPDATE = 'https://www.eventbrite.com/json/organizer_update';
     const URL_EVENTS = 'https://www.eventbrite.com/json/organizer_list_events';
 
     /**
