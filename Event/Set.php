@@ -309,7 +309,7 @@ class Set extends EventbriteBase
     }
 
     /**
-     * Sets color to Hexdecimal
+     * Sets header color
      *
      * @param string
      * @return Eden\Eventbrite\Event\Set
