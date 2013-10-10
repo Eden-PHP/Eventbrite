@@ -92,7 +92,7 @@ class Venue extends Base
     }
 
     /**
-     * set name in query
+     * set address in query
      *
      * @param string
      * @return Eden\Eventbrite\Venue
