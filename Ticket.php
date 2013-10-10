@@ -84,6 +84,7 @@ class Ticket extends Base
     {
         //Argument 1 must be a string
         Argument::i()->test(1, 'string');
+
         $this->query['description'] = $description;
 
         return $this;
@@ -147,6 +148,7 @@ class Ticket extends Base
     {
         //Argument 1 must be int
         Argument::i()->test(1, 'int');
+
         $this->query['event_id'] = $id;
 
         return $this;
@@ -197,6 +199,7 @@ class Ticket extends Base
     {
          //Argument 1 must be int
         Argument::i()->test(1, 'int');
+
         $this->query['id'] = $ticketId;
 
         return $this;
@@ -212,6 +215,7 @@ class Ticket extends Base
     {
         //Argument 1 must be an integer
         Argument::i()->test(1, 'int');
+
         if ($max < 1) {
             $max = 1;
         }
@@ -231,6 +235,7 @@ class Ticket extends Base
     {
         //Argument 1 must be an integer
         Argument::i()->test(1, 'int');
+
         if ($min < 0) {
             $min = 0;
         }
@@ -249,6 +254,7 @@ class Ticket extends Base
     {
         //Argument 1 must be int
         Argument::i()->test(1, 'string');
+
         $this->query['name'] = $name;
 
         return $this;
@@ -264,6 +270,7 @@ class Ticket extends Base
     {
         //Argument 1 must be float
         Argument::i()->test(1, 'float', 'int');
+
         $this->query['price'] = $price;
 
         return $this;
@@ -279,6 +286,7 @@ class Ticket extends Base
     {
         //Argument 1 must be an integer
         Argument::i()->test(1, 'int');
+
         $this->query['quantity'] = $quantity;
 
         return $this;
