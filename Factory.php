@@ -56,7 +56,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Discount::i($user, $api);
     }
@@ -75,7 +75,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Event::i($user, $api);
     }
@@ -94,7 +94,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Organizer::i($user, $api);
     }
@@ -113,7 +113,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Payment::i($user, $api);
     }
@@ -132,7 +132,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Event\Search::i($user, $api);
     }
@@ -151,7 +151,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Event\Set::i($user, $api);
     }
@@ -170,7 +170,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Ticket::i($user, $api);
     }
@@ -189,7 +189,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return User::i($user, $api);
     }
@@ -208,7 +208,7 @@ class Factory extends Base
             //Argument 1 must be a string
             ->test(1, 'string')
             //Argument 2 must be a string or null
-            ->test(2, 'string', 'bool');
+            ->test(2, 'string', 'bool', 'null');
 
         return Venue::i($user, $api);
     }
