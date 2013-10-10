@@ -21,8 +21,8 @@ use Eden\Oauth\Oauth2\Client;
 class Oauth extends Client
 {
     const INSTANCE = 0; // set to multiton
-    const REQUEST_URL   = 'https://www.eventbrite.com/oauth/authorize';
-    const ACCESS_URL    = 'https://www.eventbrite.com/oauth/token';
+    const REQUEST_URL = 'https://www.eventbrite.com/oauth/authorize';
+    const ACCESS_URL = 'https://www.eventbrite.com/oauth/token';
 
     /**
      * Construct Oauth class
