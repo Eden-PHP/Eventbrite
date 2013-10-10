@@ -22,6 +22,7 @@ use Eden\Curl\Base as Curl;
 class Base extends CoreBase
 {
     const ACCESS_HEADER = 'Authorization: Bearer %s';
+
     protected $user = null;
     protected $api = null;
     protected $meta = array();

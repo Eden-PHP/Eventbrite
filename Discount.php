@@ -21,12 +21,13 @@ class Discount extends Base
     const INSTANCE = 0;
     const URL_NEW = 'https://www.eventbrite.com/json/discount_new';
     const URL_UPDATE = 'https://www.eventbrite.com/json/discount_update';
+
     protected $query = array();
 
     /**
      * Sets token or user and api
      *
-     * @param string  $user
+     * @param string $user
      * @param string $api
      * @return  void
      */

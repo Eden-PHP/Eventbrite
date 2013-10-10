@@ -22,12 +22,13 @@ use Eden\Eventbrite\Argument as Argument;
 class Search extends EventbriteBase
 {
     const URL = 'https://www.eventbrite.com/json/event_search';
+
     protected $query = array();
 
     /**
      * Sets token or user and api
      *
-     * @param string  $user
+     * @param string $user
      * @param string $api
      * @return  void
      */

@@ -20,12 +20,13 @@ class Ticket extends Base
 {
     const URL_NEW = 'https://www.eventbrite.com/json/ticket_new';
     const URL_UPDATE = 'https://www.eventbrite.com/json/ticket_update';
+
     protected $query = array();
 
     /**
      * Sets token or user and api
      *
-     * @param string  $user
+     * @param string $user
      * @param string $api
      * @return  void
      */
@@ -145,7 +146,7 @@ class Ticket extends Base
     public function setEvent($id)
     {
         //Argument 1 must be numeric
-        Argument::i()->test(1, 'numeric');
+        Argument::i()->test(1, 'int');
         $this->query['event_id'] = $id;
 
         return $this;
@@ -195,7 +196,7 @@ class Ticket extends Base
     public function setId($ticketId)
     {
          //Argument 1 must be numeric
-        Argument::i()->test(1, 'numeric');
+        Argument::i()->test(1, 'int');
         $this->query['id'] = $ticketId;
 
         return $this;

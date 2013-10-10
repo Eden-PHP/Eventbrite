@@ -19,6 +19,7 @@ namespace Eden\Eventbrite;
 class Payment extends Base
 {
     const URL = 'https://www.eventbrite.com/json/payment_update';
+
     protected $query = array();
 
     /**

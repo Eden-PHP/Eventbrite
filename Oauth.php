@@ -24,6 +24,13 @@ class Oauth extends Client
     const REQUEST_URL   = 'https://www.eventbrite.com/oauth/authorize';
     const ACCESS_URL    = 'https://www.eventbrite.com/oauth/token';
 
+    /**
+     * Construct Oauth class
+     * @param string client id
+     * @param string api secret
+     * @param string redirect url
+     * @return void
+     */
     public function __construct($clientId, $appSecret, $redirect)
     {
         //argument test

@@ -22,6 +22,7 @@ class Event extends Base
     const URL_GET = 'https://www.eventbrite.com/json/event_get';
     const URL_LIST_ATTENDEES  = 'https://www.eventbrite.com/json/event_list_attendees';
     const URL_LIST_DISCOUNTS = 'https://www.eventbrite.com/json/event_list_discounts';
+
     protected static $validDisplays = array('profile','answers','address');
 
     /**
@@ -117,7 +118,7 @@ class Event extends Base
     public function getDetail($id)
     {
         //Argument 1 must be numeric
-        Argument::i()->test(1, 'numeric');
+        Argument::i()->test(1, 'int');
 
         $query = array('id' => $id);
 
@@ -133,7 +134,7 @@ class Event extends Base
     public function getDiscounts($id)
     {
         //Argument 1 must be numeric
-        Argument::i()->test(1, 'numeric');
+        Argument::i()->test(1, 'int');
 
         $query = array('id' => $id);
 

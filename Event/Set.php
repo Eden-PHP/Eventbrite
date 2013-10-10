@@ -495,7 +495,7 @@ class Set extends EventbriteBase
     public function setVenue($venue)
     {
         //Argument 1 must be a numeric
-        Argument::i()->test(1, 'numeric');
+        Argument::i()->test(1, 'int');
 
         $this->query['venue_id'] = $venue;
 
