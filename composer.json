@@ -1,0 +1,24 @@
+{
+    "name": "eden/eventbrite",
+    "type": "library",
+    "description": "Eden - Eventbrite API",
+    "keywords": ["eden", "library"],
+    "homepage": "http://eden-php.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Airon Paul Dumael",
+            "email": "airon.dumael@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1",
+		"eden/core": "1.*",
+		"eden/curl": "1.*",
+		"eden/oauth": "1.*"
+    },
+    "autoload": {
+         "psr-0": { "Eden\\Eventbrite\\": "" }
+    },
+	"target-dir": "Eden/Eventbrite"
+}

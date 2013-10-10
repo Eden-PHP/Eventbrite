@@ -52,13 +52,13 @@ class EventTest extends \PHPUnit_Framework_TestCase
 
     public function testSearch()
     {
-        // $search = $this->event->search();
-        // $this->assertInstanceOf('Eden\\Eventbrite\\Event\\Search', $search);
+        $search = $this->event->search();
+        $this->assertInstanceOf('Eden\\Eventbrite\\Event\\Search', $search);
     }
 
     public function testSet()
     {
-        // $set = $this->event->set();
-        // $this->assertInstanceOf('Eden\\Eventbrite\\Event\\Set', $set);
+        $set = $this->event->set();
+        $this->assertInstanceOf('Eden\\Eventbrite\\Event\\Set', $set);
     }
 }

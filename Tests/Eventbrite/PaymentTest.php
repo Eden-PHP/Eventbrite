@@ -18,149 +18,149 @@ class Payment extends \PHPUnit_Framework_TestCase
 
     public function testAcceptCheck()
     {
-        // $payment = $this->payment
-        //     ->acceptCheck();
+        $payment = $this->payment
+            ->acceptCheck();
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('accept_check' => 1),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('accept_check' => 1),
+            'query',
+            $payment
+        );
     }
 
     public function testAcceptGoogle()
     {
-        // $payment = $this->payment
-        //     ->acceptGoogle();
+        $payment = $this->payment
+            ->acceptGoogle();
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('accept_google' => 1),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('accept_google' => 1),
+            'query',
+            $payment
+        );
     }
 
     public function testAcceptInvoice()
     {
-        // $payment = $this->payment
-        //     ->acceptInvoice();
+        $payment = $this->payment
+            ->acceptInvoice();
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('accept_invoice' => 1),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('accept_invoice' => 1),
+            'query',
+            $payment
+        );
     }
 
     public function testAcceptPaypal()
     {
-        // $payment = $this->payment
-        //     ->acceptPaypal();
+        $payment = $this->payment
+            ->acceptPaypal();
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('accept_paypal' => 1),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('accept_paypal' => 1),
+            'query',
+            $payment
+        );
     }
 
     public function testSetCashInstructions()
     {
-        // $instructions = 'The quick brown fox jumps over the lazy dog.';
-        // $payment = $this->payment
-        //     ->setCashInstructions($instructions);
+        $instructions = 'The quick brown fox jumps over the lazy dog.';
+        $payment = $this->payment
+            ->setCashInstructions($instructions);
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('instructions_cash' => $instructions),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('instructions_cash' => $instructions),
+            'query',
+            $payment
+        );
     }
 
     public function testSetCheckInstructions()
     {
-        // $instructions = 'The quick brown fox jumps over the lazy dog.';
-        // $payment = $this->payment
-        //     ->setCheckInstructions($instructions);
+        $instructions = 'The quick brown fox jumps over the lazy dog.';
+        $payment = $this->payment
+            ->setCheckInstructions($instructions);
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('instructions_check' => $instructions),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('instructions_check' => $instructions),
+            'query',
+            $payment
+        );
     }
 
     public function testSetInvoiceInstructions()
     {
-        // $instructions = 'The quick brown fox jumps over the lazy dog.';
-        // $payment = $this->payment
-        //     ->setInvoiceInstructions($instructions);
+        $instructions = 'The quick brown fox jumps over the lazy dog.';
+        $payment = $this->payment
+            ->setInvoiceInstructions($instructions);
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('instructions_invoice' => $instructions),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('instructions_invoice' => $instructions),
+            'query',
+            $payment
+        );
     }
 
     public function testSetEvent()
     {
-        // $payment = $this->payment->setEvent($this->eventId);
+        $payment = $this->payment->setEvent($this->eventId);
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('event_id' => $this->eventId),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('event_id' => $this->eventId),
+            'query',
+            $payment
+        );
     }
 
     public function testSetGoogleMerchantId()
     {
-        // $payment = $this->payment->setGoogleMerchantId(
-        //     $this->googleMerchantId
-        // );
+        $payment = $this->payment->setGoogleMerchantId(
+            $this->googleMerchantId
+        );
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('google_merchant_id' => $this->googleMerchantId),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('google_merchant_id' => $this->googleMerchantId),
+            'query',
+            $payment
+        );
     }
 
     public function testSetGoogleMerchantKey()
     {
-        // $payment = $this->payment->setGoogleMerchantKey(
-        //     $this->googleMerchantKey
-        // );
+        $payment = $this->payment->setGoogleMerchantKey(
+            $this->googleMerchantKey
+        );
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('google_merchant_key' => $this->googleMerchantKey),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('google_merchant_key' => $this->googleMerchantKey),
+            'query',
+            $payment
+        );
     }
 
 
     public function testSetPaypalEmail()
     {
-        // $payment = $this->payment->setPaypalEmail($this->paypalEmail);
+        $payment = $this->payment->setPaypalEmail($this->paypalEmail);
 
-        // $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
-        // $this->assertAttributeEquals(
-        //     array('paypal_email' => $this->paypalEmail),
-        //     'query',
-        //     $payment
-        // );
+        $this->assertInstanceOf('Eden\Eventbrite\Payment', $payment);
+        $this->assertAttributeEquals(
+            array('paypal_email' => $this->paypalEmail),
+            'query',
+            $payment
+        );
     }
 
     public function testUpdate()
