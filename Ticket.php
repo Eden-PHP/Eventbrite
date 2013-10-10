@@ -94,7 +94,6 @@ class Ticket extends Base
      * Accept donations
      *
      * @param  bool
-     *
      * @return Eden\Eventbrite\Ticket
      */
     public function setDonation($type = true)
