@@ -35,7 +35,7 @@ class Organizer extends Base
         Argument::i()
             //Argument 1 must be a string
             ->test(1, 'string')
-            //Argument 2 must be a string or null
+            //Argument 2 must be a string, bool or null
             ->test(2, 'string', 'bool', 'null');
 
         $this->api = $api;

@@ -38,7 +38,7 @@ class Search extends EventbriteBase
         Argument::i()
             //Argument 1 must be a string
             ->test(1, 'string')
-            //Argument 2 must be a string or null
+            //Argument 2 must be a string, bool or null
             ->test(2, 'string', 'bool', 'null');
 
         $this->api = $api;
@@ -48,7 +48,6 @@ class Search extends EventbriteBase
     /**
      * Only return the number of results found
      *
-     * @param string
      * @return Eden\Eventbrite\Event\Search
      */
     public function countOnly()
@@ -401,7 +400,7 @@ class Search extends EventbriteBase
     }
 
     /**
-     * Set pagination
+     * Set page
      *
      * @param int
      * @return Eden\Eventbrite\Event\Search

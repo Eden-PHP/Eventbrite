@@ -44,7 +44,7 @@ class User extends Base
         Argument::i()
             //Argument 1 must be a string
             ->test(1, 'string')
-            //Argument 2 must be a string or null
+            //Argument 2 must be a string, bool or null
             ->test(2, 'string', 'bool', 'null');
 
         $this->api = $api;
@@ -122,9 +122,9 @@ class User extends Base
         Argument::i()
             //Argument 1 must be a string or null
             ->test(1, 'string', 'null')
-            //Argument 2 must be a string or null
+            //Argument 2 must be a string, array or null
             ->test(2, 'string', 'array', 'null')
-            //Argument 3 must be a string or null
+            //Argument 3 must be a string, array or null
             ->test(3, 'string', 'array', 'null')
             //Argument 4 must be a string or null
             ->test(4, 'string', 'null');
