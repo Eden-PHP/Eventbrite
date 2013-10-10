@@ -56,8 +56,8 @@ class Event extends Base
     {
         //argument test
         Argument::i()
-            //Argument 1 must be numeric
-            ->test(1, 'numeric')
+            //Argument 1 must be int
+            ->test(1, 'int')
             //Argument 2 must be a string
             ->test(2, 'string');
 
@@ -85,12 +85,12 @@ class Event extends Base
     ) {
         //argument test
         $error = Argument::i()
-            //Argument 1 must be numeric
-            ->test(1, 'numeric')
-            //Argument 2 must be numeric
-            ->test(2, 'numeric')
-            //Argument 3 must be numeric
-            ->test(3, 'numeric')
+            //Argument 1 must be int
+            ->test(1, 'int')
+            //Argument 2 must be int
+            ->test(2, 'int')
+            //Argument 3 must be int
+            ->test(3, 'int')
             //Argument 4 must be a string
             ->test(4, 'string', 'null')
             //Argument 4 must be a boolean
@@ -117,7 +117,7 @@ class Event extends Base
      */
     public function getDetail($id)
     {
-        //Argument 1 must be numeric
+        //Argument 1 must be int
         Argument::i()->test(1, 'int');
 
         $query = array('id' => $id);
@@ -133,7 +133,7 @@ class Event extends Base
      */
     public function getDiscounts($id)
     {
-        //Argument 1 must be numeric
+        //Argument 1 must be int
         Argument::i()->test(1, 'int');
 
         $query = array('id' => $id);

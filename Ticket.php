@@ -145,7 +145,7 @@ class Ticket extends Base
      */
     public function setEvent($id)
     {
-        //Argument 1 must be numeric
+        //Argument 1 must be int
         Argument::i()->test(1, 'int');
         $this->query['event_id'] = $id;
 
@@ -195,7 +195,7 @@ class Ticket extends Base
      */
     public function setId($ticketId)
     {
-         //Argument 1 must be numeric
+         //Argument 1 must be int
         Argument::i()->test(1, 'int');
         $this->query['id'] = $ticketId;
 
@@ -247,7 +247,7 @@ class Ticket extends Base
      */
     public function setName($name)
     {
-        //Argument 1 must be numeric
+        //Argument 1 must be int
         Argument::i()->test(1, 'string');
         $this->query['name'] = $name;
 

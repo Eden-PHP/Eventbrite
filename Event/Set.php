@@ -377,7 +377,7 @@ class Set extends EventbriteBase
      */
     public function setOrganizer($organizer)
     {
-        //Argument 1 must be a numeric
+        //Argument 1 must be int
         Argument::i()->test(1, 'int');
 
         $this->query['organizer_id'] = $organizer;
@@ -494,7 +494,7 @@ class Set extends EventbriteBase
      */
     public function setVenue($venue)
     {
-        //Argument 1 must be a numeric
+        //Argument 1 must be int
         Argument::i()->test(1, 'int');
 
         $this->query['venue_id'] = $venue;
